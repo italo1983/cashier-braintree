@@ -35,7 +35,7 @@ trait Billable
             'options' => [
                 'submitForSettlement' => true,
             ],
-            'recurring' => true,
+            'transactionSource' => 'recurring',
         ], $options));
 
         if (! $response->success) {
